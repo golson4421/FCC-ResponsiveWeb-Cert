@@ -1,0 +1,39 @@
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+
+#div{
+  border: 3px solid black;
+  border-radius: 35px;
+}
+
+#div{
+  width: 500px;
+  height: auto;
+  margin: auto;
+}
+
+#img{
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+#info {
+  width: 100%;
+  height: auto;
+}
+
+#info {
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
