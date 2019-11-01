@@ -1,0 +1,39 @@
+.box-container{
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-size{
+  width: 160px;
+  display: block;
+}
+
+#box{
+  width: 450px;
+  margin: auto;
+}
+
+#box-2{
+  background-color: lightblue;
+}
+
+#icon-style{
+  border: 3px solid white;
+  border-radius: 50%;
+  margin: auto;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  padding: 30;
+}
+
+#about-me{
+  width: 450px;
+  margin: auto;
+  font-family: monospace;
+  text-align: center;
+}
