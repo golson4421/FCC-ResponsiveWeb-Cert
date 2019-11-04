@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Techinical Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h2>CSS Documentation</h2>
+    <ul>
+      <li><a href="#Introduction_To_Basic_CSS">Introduction To Basic CSS</li>
+      <li><a href="#Use_Attribute_Selectors_To_Style_An_Element">Use Attribute Selectors To Style An Element</li>
+      <li><a href="#Adjust_Spacing_Of_An_Element">Adjust Spacing Of An Element</li>
+      <li><a href="Adjust_The_Coloring_Of_An_Element">Adjust The Coloring Of An Element</a></li>
+      <li><a href="Adjust_The_Size_Of_An_Element">Adjust The Size Of An Element</a></li>
+    </ul>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_To_Basic_CSS">
+        <header><h1>Introduction To Basic CSS</h1></header>
+        <p>Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML. </p>
+
+        <p>Note that CSS is case-sensitive so be careful with your capitalization. CSS has been adopted by all major browsers and allows you to control:</p>
+        <ul>
+          <li>color</li>
+          <li>fonts</li>
+          <li>positioning</li>
+          <li>spacing</li>
+          <li>sizing</li>
+          <li>decorations</li>
+        </ul>
+        <p>There are three main ways to apply CSS styling. You can apply inline styles directly to HTML elements with the style attribute. Alternatively, you can place CSS rules within style tags in an HTML document. Finally, you can write CSS rules in an external style sheet, then reference that file in the HTML document. Even though the first two options have their use cases, most developers prefer external style sheets because they keep the styles separate from the HTML elements. This improves the readability and reusability of your code. The idea behind CSS is that you can use a selector to target an HTML element in the DOM (Document Object Model) and then apply a variety of attributes to that element to change the way it is displayed on the page.</p>
+      </section>
+      
+      <section class="main-section" id="Use_Attribute_Selectors_To_Style_An_Element">
+        <header><h2>Use Attribute Selectors To Style An Element</h2></header>
+        <p><strong>id</strong> or <strong>class</strong> attributes to elements you wish to specifically style. But there are other CSS Selectors you can use to select custom groups of elements to style.</p>
+        <p>Attribute Selectors work like such:</p>
+        <code>[attr=value]</code>
+        <p>This selector matches and styles element with a specific attribute value.</p>
+      </section>
+      
+      <section class="main-section" id="Adjust_Spacing_Of_An_Element">
+        <header><h2>Adjust Spacing Of An Element</h2></header>
+        <p>HTML elements are essentially little rectangles.
+
+          Three important properties control the space that surrounds each HTML element: **padding**, **margin**, **border**</p>
+
+        <ul>
+          <li>» An element's <strong>padding</strong> controls the amount of space between the element's content and its border.</li>
+
+          <li>» An element's <strong>margin</strong> controls the amount of space between an element's **border** and surrounding elements.</li>
+        </ul>
+        
+        <hr>
+        
+        <p>So if a positive value like 20px, the element will grow smaller.
+
+          But if we have a negative value like -15px, the element will grow larger.</p>
+        <hr>
+        <p>Sometimes you want to customize an element so that it has different amounts of <strong>padding</strong> on each of its sides.</p>
+        <p>CSS allows you to control the <strong>padding</strong> of all four individual sides of an element with the <strong>padding-top</strong>, <strong>padding-right</strong> , <strong>padding-bottom</strong> and <strong>padding-left</strong> properties.</p>
+        
+        <p><strong>Note: This goes for margin as well.</strong></p>
+        <code>
+              #some-element{
+              padding: 10px 20px 10px 20px;
+              }
+        </code>
+      </section>
+      
+      <section class="main-section" id="Adjust_The_Coloring_Of_An_Element">
+        <header><h2>Adjust The Coloring Of An Element</h2></header>
+        <h3>Using CSS Color Codes for Basic Colors</h3>
+        <p>When it comes to styling a webpage it is important to turn that plain black and white appearance that comes as standard when applying elements to standard html into a vibrant and appealing page of color to the users eyes. This is where CSS would come in perfectly! </p>
+        <p>Now, don't worry if you aren't familiar with all the properties in CSS that can apply color to elements because there is a much easier way. Let's learn how to color an element with simple CSS using the <strong>color</strong> property.</p>
+        <p>To give color to an element, it's as simple as writing in your element that you selected into css:</p>
+        <code>someElement{color: red;}</code>
+        <p>Congrats! Your element is now the color of red, it's that easy!</p>
+        <p>There are around 148 color codes to add life into your elements, so go <a href="https://www.quackit.com/css/color/charts/css_color_names_chart.cfm">try them out</a></p>
+        <h3>Using Hex Codes for Elements</h3>
+        <p>Hexadecimal color values are also supported in all browsers.</p>
+        <p>A hexadecimal color is specified with: #RRGGBB.</p>
+        <p>RR (red), GG (green) and BB (blue) are hexadecimal integers between 00 and FF specifying the intensity of the color. For example, #0000FF is displayed as blue, because the blue component is set to its highest value (FF) and the others are set to 00.</p>
+        <h3>Using RGB values for Elements </h3>
+        <p>The RGB value for black looks like this:</p>
+        <p>**rgb(0, 0, 0)**</p>
+        <p>The RGB value for white looks like this:</p>
+        <p>**rgb(255, 255, 255)**</p>
+        <p>Instead of using six hexadecimal digits, with RGB you specify the brightness of each color with a number between 0 and 255.</p>
+        <p>If you do the math, two digits for one color equal 16 times 16, which gives us a total of 256 values. So RGB, which starts counting from zero, has the exact same number of possible values as hex code.</p>
+        <p>Here's an example of how you'd change the body background to orange using its RGB code:</p>
+        <code>
+          body{
+            background-color: rgb(225, 165, 0);
+          }
+        </code>
+      </section>
+      
+      <section class="main-section" id="Adjust_The_Size_Of_An_Element">
+        <header><h2>Adjust The Size Of An Element</h2></header>
+        <p>#### Understand Absolute versus Relative Units
+
+        <p>What you've seen in the previous code is all the element's margin or padding was set to pixels (**px**).  Pixels are a type of length unit, telling the browser how to size/space an item. In addition to **px**, CSS has a number of different length unit options you can use.</p>
+ 
+        <strong>The two main types of length units are absolute and relative.</strong>
+
+        <p>Absolute units tie to physical units of length</p>
+        <p>For example: **in** and **mm** refer to inches and millimeters.</p>
+
+        <p>Relative units, such as **em** or **rem** are relative to another length value.</p>
+        
+        <p>For example, **em** is based on the size of an element's font. If you use it to set the **font-size** property itself, it's relative to the parent's **font-size**</p>
+      </section>
+      
+    </main>
+  </body>
+</html>
