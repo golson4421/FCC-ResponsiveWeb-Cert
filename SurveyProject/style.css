@@ -1,0 +1,25 @@
+#survey-box{
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+#survey-title{
+  text-align: center;
+}
+
+#survey-question{
+  text-align:center;
+}
+
+
+#submit{
+  display: block;
+  margin: auto;
+}
+
+footer {
+  color:#899089;
+  text-align: center;
+}
