@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Loader!</title>
+    <style>
+      
+      @keyframes circle{
+        0%{}
+        50%{background-color: blue; padding: 6px;}
+        100%{}
+      }
+      
+      .animation{
+        background-color:red;
+        border-radius: 50%;
+        animation-name: circle;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      
+      #circle-1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -200px;
+        width: 50px;
+        height: 50px;
+      }
+      
+      #circle-2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -100px;
+        width: 50px;
+        height: 50px;
+        animation-delay: 1s;
+      }
+      
+      
+      #circle-3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: 5px;
+        width: 50px;
+        height: 50px;
+      }
+      
+      #circle-4{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: 115px;
+        width: 50px;
+        height: 50px;
+        animation-delay: 1s;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="circle-1" class="animation"></div>
+    <div id="circle-2" class="animation"></div>
+    <div id="circle-3" class="animation"></div>
+    <div id="circle-4" class="animation"></div>
+  </body>
+</html>
